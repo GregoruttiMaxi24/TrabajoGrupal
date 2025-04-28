@@ -15,4 +15,7 @@ header {
 nav {
     display: flex;
     width: 100%;
+    background: #fff;
+    padding: 10px 20px;
 }
+
