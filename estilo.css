@@ -14,7 +14,7 @@ header {
     justify-content: center;
 }
 
-#inicio {
+.titulo-h1 {
     font-size: 2.5em;
     margin: 0;
     justify-content: center;
