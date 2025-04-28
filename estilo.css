@@ -48,7 +48,7 @@ nav {
     overflow: hidden;
 }
 .banner-container img {
-    width: 100%;
+    width: 10%;
     height: 100%;
     object-fit: cover;
     top: 0;
