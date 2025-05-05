@@ -191,7 +191,6 @@ nav {
 /*--------------------------------------------*/
 
 .container-modelos {
-  display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -206,6 +205,32 @@ nav {
   font-size: 1.5em;
   margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container-producto {
+  display: inline;
+  width: 300px;
+  height: 280px;
+}
+
+.container-producto img {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
 }
 
 /*-----------------catalogo-------------------*/
