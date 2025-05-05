@@ -117,14 +117,14 @@ nav {
   color: white;
   font-size: 1.2em;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 25px;
   transition: background-color 0.3s ease;
 }
 
 .menu-container ul li a:hover {
   background-color: #5d086e;
   transition: all 0.3s ease;
-  color: #1e1e1e;
+  color: #fff;
 }
 
 .seccion {
