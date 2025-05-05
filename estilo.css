@@ -26,6 +26,12 @@
   padding: 15px;
 }
 
+.header-titulo h1:hover {
+  color: #08456e;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 .logo {
   width: 60px;
   height: 55px;
@@ -84,9 +90,10 @@ nav {
 }
 
 .container-buscador .boton-buscar:hover {
-  background-color: #08456e;
+  background-color: #5d086e;
   color: white;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .container-buscador .boton-buscar:focus {
