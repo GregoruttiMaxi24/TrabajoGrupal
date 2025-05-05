@@ -46,6 +46,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 60px;
 }
 
 .container-buscador input[type="text"] {
@@ -79,8 +80,7 @@ nav {
   padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 0.9em;
-  margin-left: -80px;
+  font-size: 1em;
 }
 
 .container-buscador .boton-buscar:hover {
