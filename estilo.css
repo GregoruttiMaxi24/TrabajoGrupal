@@ -27,7 +27,7 @@
 }
 
 .header-titulo h1:hover {
-  color: #08456e;
+  color: #;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -90,7 +90,7 @@ nav {
 }
 
 .container-buscador .boton-buscar:hover {
-  background-color: #5d086e;
+  background-color: #08456e;
   color: white;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -113,7 +113,6 @@ nav {
 .menu-container ul {
   list-style: none;
   display: flex;
-  gap: 20px;
 }
 
 .menu-container ul li {
