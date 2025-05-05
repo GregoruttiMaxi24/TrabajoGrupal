@@ -155,3 +155,20 @@ nav {
   height: 100%;
   object-fit: cover;
 }
+
+/*---------*/
+
+.container-bienvenidos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.container-texto-bienvenidos h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
