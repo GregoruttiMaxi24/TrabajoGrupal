@@ -93,7 +93,7 @@ nav {
   border-color: #1e1e1e;
 }
 
-/*---------------buscador-------------------*/
+/*---------------menu-------------------*/
 
 .menu-container {
   display: flex;
@@ -112,6 +112,7 @@ nav {
   display: inline-block;
 }
 .menu-container ul li a {
+  background: ;
   text-decoration: none;
   color: white;
   font-size: 1.2em;
@@ -121,7 +122,7 @@ nav {
 }
 
 .menu-container ul li a:hover {
-  background-color: #d9d7d7;
+  background-color: #5d086e;
   transition: all 0.3s ease;
   color: #1e1e1e;
 }
