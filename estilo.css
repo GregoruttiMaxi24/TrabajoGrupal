@@ -79,7 +79,8 @@ nav {
   padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 0.9em;
+  margin-left: -80px;
 }
 
 .container-buscador .boton-buscar:hover {
