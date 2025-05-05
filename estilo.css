@@ -143,6 +143,8 @@ nav {
   background-color: #f9f9f9;
 }
 
+/*-----------------------------------------*/
+
 .banner-container {
   position: relative;
   width: 100%;
@@ -154,6 +156,8 @@ nav {
   height: 100%;
   object-fit: cover;
 }
+
+/*---------------------------------------------*/
 
 .container-bienvenidos {
   display: flex;
@@ -170,6 +174,8 @@ nav {
   margin-bottom: 10px;
 }
 
+/*----------------------------------------------*/
+
 .container-lista {
   display: flex;
   flex-direction: column;
@@ -181,6 +187,26 @@ nav {
   border-radius: 5px;
   background-color: #f9f9f9;
 }
+
+/*--------------------------------------------*/
+
+.container-modelos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.modelos-titulo {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/*-----------------catalogo-------------------*/
 
 #form {
   display: flex;
