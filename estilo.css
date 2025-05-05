@@ -27,7 +27,7 @@
 }
 
 .header-titulo h1:hover {
-  color: #;
+  color: #5d086e;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -119,7 +119,6 @@ nav {
   display: inline-block;
 }
 .menu-container ul li a {
-  background: ;
   text-decoration: none;
   color: white;
   font-size: 1.2em;
@@ -155,8 +154,6 @@ nav {
   height: 100%;
   object-fit: cover;
 }
-
-/*---------*/
 
 .container-bienvenidos {
   display: flex;
