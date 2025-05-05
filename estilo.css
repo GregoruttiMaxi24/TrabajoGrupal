@@ -192,6 +192,7 @@ nav {
 
 .container-modelos {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin: 20px;
@@ -204,6 +205,7 @@ nav {
 .modelos-titulo {
   font-size: 1.5em;
   margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*-----------------catalogo-------------------*/
