@@ -5,6 +5,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: all 0.6s;
+}
+
 .container-header {
   display: flex;
   height: 80px;
@@ -46,6 +54,9 @@ nav {
   width: 100%;
   background: #1e1e1e;
   padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index:10;
 }
 
 .container-buscador {
@@ -188,6 +199,10 @@ nav {
   background-color: #f9f9f9;
 }
 
+.container-lista ul li a{
+  color: black;
+}
+
 /*--------------------------------------------*/
 
 .container-modelos {
@@ -207,29 +222,46 @@ nav {
 }
 
 .catalogo {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-rows: repeat(3, auto);
   justify-content: center;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  flex-direction: column;
-  flex-wrap: wrap;
+  justify-items: center;
+  grid-column-gap: 4%;
+  margin: 0 auto;
 }
 
 .container-producto {
-  display: inline;
-  width: 300px;
-  height: 280px;
+  width: 90%;
+  height: auto;
+  align-content:end;
+  margin: 30px 0;
+  text-align: center;
+  outline: 2px solid transparent;
+  border-radius: 16px;
+  background-color: #7a4bd1;
+  color: white;
+}
+
+.producto-precio {
+  font-size: 1.6rem;
+  padding: 10px 0;
 }
 
 .container-producto img {
   width: 50%;
   height: auto;
-  border-radius: 5px;
+  margin: 16px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container-producto img:hover {
+  transform: scale(0.9);
+}
+
+
+.producto-boton {
+  padding: 10px 0;
 }
 
 /*-----------------catalogo-------------------*/
@@ -273,27 +305,43 @@ label {
 textarea {
   height: 150px;
   resize: none;
-}
-button {
-  background-color: #4caf50;
+} 
+.producto-boton > button {
+  background-color: #8961ea;
   color: white;
   padding: 10px 20px;
+  font-size: 1.3rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  margin: 0 6px;
   cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
 }
-button:hover {
-  background-color: #3e8e41;
+.producto-boton > button:hover {
+  background-color: #49cc5d;
 }
 footer {
   background-color: #1e1e1e;
   color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 120px
 }
+
+.etiqueta {
+  display:flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.etiqueta a {
+  margin: 0 10px;
+}
+
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: white;
   font-size: 1.2em;
 }
