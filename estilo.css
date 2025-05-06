@@ -15,7 +15,7 @@ body {
   background-size: 600% 600%;
   animation: degradado 10s ease infinite;
 }
-/* ANIMACION */
+/* ANIMACION DEL BODY */
 @keyframes degradado {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
