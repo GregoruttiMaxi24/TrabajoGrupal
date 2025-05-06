@@ -165,16 +165,27 @@ nav {
 
 /*-----------------------------------------*/
 
-.banner-container {
-  position: relative;
+.banner {
   width: 100%;
-  overflow: hidden;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  animation: changeImage 20s infinite;
 }
-
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* ANIMACION DE IMAGENES */
+@keyframes changeImage {
+  0% {
+    background-image: url('img/pexels-photo-24738079.webp');
+  }
+  33% {
+    background-image: url('img/pexels-photo-25809226.webp');
+  }
+  66% {
+    background-image: url('img/william-hook-9e9PD9blAto-unsplash.jpg');
+  }
+  100% {
+    background-image: url('img/firmbee-com-SpVHcbuKi6E-unsplash.jpg');
+  }
 }
 
 /*---------------------------------------------*/
