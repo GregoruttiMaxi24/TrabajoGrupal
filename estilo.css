@@ -282,6 +282,12 @@ nav {
   padding: 10px 0;
 }
 
+.producto-titulo {
+  font-size: 1.3rem;
+  margin: 15px auto;
+  width: 50%
+}
+
 /*-----------------catalogo-------------------*/
 
 #form {
