@@ -51,13 +51,13 @@
     <div class="container-lista">
       <h3>Marcas</h3>
       <ul>
-        <li><a href="Samsung.html" target="_blank">Samsung</a></li>
-        <li><a href="Xiaomi.html" target="_blank">Xiaomi</a></li>
-        <li><a href="Motorola.html" target="_blank">Motorola</a></li>
-        <li><a href="Huawuei.html" target="_blank">Huawuei</a></li>
-        <li><a href="Apple.html" target="_blank">Apple</a></li>
-        <li><a href="Sony.html" target="_blank">Sony</a></li>
-        <li><a href="ZTE.html" target="_blank">ZTE</a></li>
+        <li><a href="#samsung" >Samsung (4)</a></li>
+        <li><a href="#apple" >Apple (2)</a></li>
+        <li><a href="#motorola" >Motorola (2)</a></li>
+        <li><a href="#xiaomi" >Xiaomi</a></li>
+        <li><a href="#huawuei" >Huawuei</a></li>
+        <li><a href="#sony" >Sony</a></li>
+        <li><a href="#zte" >ZTE</a></li>
       </ul>
     </div>
 
@@ -66,24 +66,9 @@
         <p>Modelos</p>
       </div>
 
+      <a name="motorola"></a>
       <div class="catalogo">
-        <div class="container-producto">
-          <img src="img/modelos-celulares/galaxy-a16-black-front.png" alt="" />
-          <div class="producto-precio">
-            <p>$536.000</p>
-          </div>
-          <div class="producto-titulo">
-            <p></p>
-          </div>
-          <div class="producto-descripcion">
-            <p></p>
-          </div>
-          <div class="producto-boton">
-            <button>comprar</button>
-            <button>ver</button>
-          </div>
-        </div>
-
+        
         <div class="container-producto">
           <img
             src="img/modelos-celulares/moto-g05-forestgreen-front_back.png"
@@ -123,7 +108,8 @@
             <button>ver</button>
           </div>
         </div>
-
+        
+        <a name="apple"></a>
         <div class="container-producto">
           <img src="img/modelos-celulares/phone16_pro_max-removebg-preview-removebg-preview.png" alt="" />
           <div class="producto-precio">
@@ -158,6 +144,25 @@
           </div>
         </div>
 
+
+        <a name="samsung"></a>
+        <div class="container-producto">
+          <img src="img/modelos-celulares/galaxy-a16-black-front.png" alt="" />
+          <div class="producto-precio">
+            <p>$536.000</p>
+          </div>
+          <div class="producto-titulo">
+            <p></p>
+          </div>
+          <div class="producto-descripcion">
+            <p></p>
+          </div>
+          <div class="producto-boton">
+            <button>comprar</button>
+            <button>ver</button>
+          </div>
+        </div>
+        
         <div class="container-producto">
           <img src="img/modelos-celulares/s25-yellow-front.png" alt="" />
           <div class="producto-precio">
@@ -213,25 +218,24 @@
 
     <div class="form">
       <form action="POST" id="form">
-        <br /><br />
-        <label for="nombre">nombre</label>
-        <input type="text" name="nombre" />
-        <br /><br />
-        <label for="email" name="email" aria-placeholder="email">Email</label>
-        <input type="email" name="email" />
-        <br /><br />
-        <label for="telefono" name="telefono">telefono</label>
-        <input type="number" name="telefono" />
-        <br /><br />
-        <label for="mensaje" name="mensaje">Mandanos tu consulta!</label>
-        <br />
-        <textarea
+        <h3>Consultanos !</h3>
+        <br/>
+        <label for="nombre"> </label>
+        <input type="text" name="nombre" placeholder="Nombre ()" />
+        
+        <label for="email"></label>
+        <input type="email" name="email" placeholder="Email ()" />
+
+        <label for="telefono" ></label>
+        <input type="number" name="telefono" placeholder="Telefono ()"/>
+        
+        <textarea class="textarea"
           name="mensaje"
           id="comentarios"
-          placeholder="escribe aqui"
+          placeholder="Motivo de la consulta"
         ></textarea>
-        <br />
-        <button>enviar</button>
+        <button>Enviar</button>
+      
       </form>
     </div>
     <footer>
