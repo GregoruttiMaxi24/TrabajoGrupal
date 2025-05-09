@@ -329,6 +329,15 @@ nav {
   margin: 0 auto;
 }
 
+.form-boton {
+  width: 18%;
+  height: 26%;
+  border-radius: 5px;
+}
+.form-boton:hover {
+  background-color: #49cc5d;
+}
+
 .container-lista {
   align-items: start;
   display: flex;
