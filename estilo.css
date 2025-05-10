@@ -386,6 +386,8 @@ textarea {
 .producto-boton > button:hover {
   background-color: #49cc5d;
 }
+
+/* Footer */
 footer {
   background-color: #1e1e1e;
   color: white;
