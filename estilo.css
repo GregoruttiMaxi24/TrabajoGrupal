@@ -141,6 +141,49 @@ nav {
   border-color: #1e1e1e;
 }
 
+.container-lista{
+  width: 75%; /* O cualquier ancho específico */
+  margin: 0 auto; /* Centra horizontalmente */
+  text-align: center; /*centra el texto del contenedor div*/
+  padding: 10px;
+  /*border-radius: 10px; /*borde del contenedor*/
+  /*border-style: dotted;*/
+}
+
+.container-lista ul li{
+  display: inline-block; /* flex o inline-block; acomoda la lista de costado */
+  list-style-type: none; /*elimina las vinietas*/
+  margin: 0 20px; /* Agrega espacio entre los elementos */
+  padding: 10px; /*espacio alrededor de cada palabra*/
+}
+
+.container-lista li{
+  background-color: rebeccapurple; /*color de fondo de cada palabra*/
+  border-style: groove;
+  border: #7a4bd1 3px solid; /*borde de cada palabra*/
+  border-radius: 10px; 
+}
+
+.container-lista li:hover {
+  box-shadow: /*sombras*/
+    2px 8px 12px 2px rgba(0, 0, 0, 0.2), 
+    3px 10px 24px 3px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em; /*tamanio letra*/
+}
+
+a:hover {
+  color: #49cc5d; /*le cambia el color al posicionarte*/
+}
+
+h2 {
+  text-align: center;
+}
+
 /*---------------menu-------------------*/
 
 .menu-container {
@@ -227,24 +270,6 @@ nav {
 
 /*----------------------------------------------*/
 
-.container-lista {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-.container-lista ul li a {
-  color: black;
-}
-
-/*--------------------------------------------*/
-
 .container-modelos {
   width: 100%;
   justify-content: center;
@@ -321,38 +346,29 @@ nav {
 /*-----------------catalogo-------------------*/
 
 #form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  height: 30%;
-  background-color: #7a4bd1;
+  display: flex; /*acomoda el contenido de form en el centro*/
+  flex-direction: column; /*acomoda el formulario en forma de columna*/
+  align-items: center; /*alinea el boton Enviar en el centro*/
+  /*justify-content: center; */
+  width: 35%; /*ancho*/
+  height: 30%; /*altura*/
+  background-color: rebeccapurple;
   color: white;
-  padding: 15px;
-  text-align: center;
-  border: 1px solid #000000;
+  padding: 20px;
   border-radius: 10px;
   margin: 0 auto;
+  border: #7a4bd1 3px solid; /*borde de cada palabra*/
 }
 
 .form-boton {
-  width: 18%;
-  height: 26%;
+  width: 60px;
+  height: 25px;
   border-radius: 5px;
 }
 .form-boton:hover {
   background-color: #49cc5d;
 }
 
-.container-lista {
-  align-items: start;
-  display: flex;
-  width: 25%;
-  background-color: whitesmoke;
-  align-items: center;
-  margin-left: 20px;
-}
 
 input[type="text"],
 input[type="email"],
@@ -406,10 +422,4 @@ footer {
 
 .etiqueta a {
   margin: 0 10px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
 }
