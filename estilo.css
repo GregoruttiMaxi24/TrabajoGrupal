@@ -445,7 +445,7 @@ h2 {
   color: white;
   padding: 20px;
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 10px auto;
   border: #7a4bd1 3px solid;
 }
 
@@ -473,7 +473,7 @@ label {
   font-size: 18px;
 }
 textarea {
-  height: 150px;
+  height: 100px;
   resize: none;
 }
 .producto-boton > button {
