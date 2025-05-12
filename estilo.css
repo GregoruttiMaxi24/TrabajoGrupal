@@ -226,9 +226,10 @@ h2 {
 
 /*-----------------------------------------*/
 .banner-container {
-  border-bottom-style: solid;
-  border-bottom-color: grey;
-  border-bottom-width: 2px;
+  mask-image: linear-gradient(
+    #c090f7 80%,
+    transparent
+  )
 }
 .banner {
   width: 100%;
