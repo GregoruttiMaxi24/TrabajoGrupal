@@ -48,6 +48,7 @@ body {
 .header-titulo {
   display: flex;
   padding: 5px;
+  height: 75px;
 }
 
 .header-titulo h1 {
@@ -58,16 +59,17 @@ body {
 }
 
 .header-titulo h1:hover {
-  color: #5d086e;
+  color: #8e0ba9;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .logo {
-  width: 60px;
-  height: 55px;
+  width: 55px;
+  height: 52px;
   margin-right: 20px;
   border-radius: 50px;
+  padding: 1px;
 }
 
 .logo:hover {
@@ -214,14 +216,26 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  width: 100%;
+  height: 480px;
+  margin: auto;
+  margin-top: 30px;
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  text-align: center;
+  background-image: url("img/banner/pexels-esan-2085998.jpg");
+  background-size: cover;
 }
+
 .container-texto-bienvenidos h2 {
   font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.container-texto-bienvenidos p {
+  font-size: 1.2em;
+  color: #fff;
   margin-bottom: 10px;
 }
 
