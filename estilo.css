@@ -141,31 +141,29 @@ nav {
   border-color: #1e1e1e;
 }
 
-.container-lista{
-  width: 75%; /* O cualquier ancho específico */
-  margin: 0 auto; /* Centra horizontalmente */
-  text-align: center; /*centra el texto del contenedor div*/
+.container-lista {
+  width: 75%;
+  margin: 0 auto; 
+  text-align: center; 
   padding: 10px;
-  /*border-radius: 10px; /*borde del contenedor*/
-  /*border-style: dotted;*/
 }
 
 .container-lista ul li{
-  display: inline-block; /* flex o inline-block; acomoda la lista de costado */
-  list-style-type: none; /*elimina las vinietas*/
-  margin: 0 20px; /* Agrega espacio entre los elementos */
-  padding: 10px; /*espacio alrededor de cada palabra*/
+  display: inline-block;
+  list-style-type: none; 
+  margin: 0 20px; 
+  padding: 10px;
 }
 
 .container-lista li{
-  background-color: rebeccapurple; /*color de fondo de cada palabra*/
+  background-color: rebeccapurple; 
   border-style: groove;
-  border: #7a4bd1 3px solid; /*borde de cada palabra*/
+  border: #7a4bd1 3px solid; 
   border-radius: 10px; 
 }
 
 .container-lista li:hover {
-  box-shadow: /*sombras*/
+  box-shadow:
     2px 8px 12px 2px rgba(0, 0, 0, 0.2), 
     3px 10px 24px 3px rgba(0, 0, 0, 0.2);
 }
@@ -173,11 +171,11 @@ nav {
 a {
   text-decoration: none;
   color: white;
-  font-size: 1.2em; /*tamanio letra*/
+  font-size: 1.2em; 
 }
 
 a:hover {
-  color: #49cc5d; /*le cambia el color al posicionarte*/
+  color: #49cc5d;
 }
 
 h2 {
@@ -227,13 +225,36 @@ h2 {
 }
 
 /*-----------------------------------------*/
-
+.banner-container {
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+  border-bottom-width: 2px;
+}
 .banner {
   width: 100%;
   height: 600px;
-  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-size: auto;
   background-position: center;
   animation: changeImage 20s infinite;
+  opacity: 0.7;
+}
+
+.banner > h2 {
+  font-size: 3.3rem;
+  animation: slide-fade 10s infinite;
+}
+
+.banner > p {
+  font-size: 1.8rem;
+  width: 50%;
+  text-align: center;
+  animation: moved-fade 10s infinite;
 }
 /* ANIMACION DE IMAGENES */
 @keyframes changeImage {
@@ -241,13 +262,52 @@ h2 {
     background-image: url("img/pexels-photo-24738079.webp");
   }
   33% {
-    background-image: url("img/pexels-photo-25809226.webp");
+    background-image: url("img/movil.jpg");
   }
   66% {
     background-image: url("img/william-hook-9e9PD9blAto-unsplash.jpg");
   }
   100% {
     background-image: url("img/firmbee-com-SpVHcbuKi6E-unsplash.jpg");
+  }
+}
+
+/* DESVANECIMIENTO Y MOVIMIENTO DEL TEXTO */
+@keyframes slide-fade{
+  0% { 
+    opacity: 0;
+    transform: translateY(-26px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+}
+
+@keyframes moved-fade {
+  0% { 
+    opacity: 0;
+    transform: translateY(-26px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(26px);
   }
 }
 
@@ -290,7 +350,7 @@ h2 {
   grid-template-rows: repeat(3, auto);
   justify-content: center;
   justify-items: center;
-  grid-column-gap: 4%;
+  grid-column-gap: 3%;
   margin: 0 auto;
 }
 
@@ -346,18 +406,17 @@ h2 {
 /*-----------------catalogo-------------------*/
 
 #form {
-  display: flex; /*acomoda el contenido de form en el centro*/
-  flex-direction: column; /*acomoda el formulario en forma de columna*/
-  align-items: center; /*alinea el boton Enviar en el centro*/
-  /*justify-content: center; */
-  width: 35%; /*ancho*/
-  height: 30%; /*altura*/
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  width: 35%;
+  height: 30%; 
   background-color: rebeccapurple;
   color: white;
   padding: 20px;
   border-radius: 10px;
   margin: 0 auto;
-  border: #7a4bd1 3px solid; /*borde de cada palabra*/
+  border: #7a4bd1 3px solid; 
 }
 
 .form-boton {
