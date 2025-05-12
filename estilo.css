@@ -266,6 +266,7 @@ h2 {
 .banner > h2 {
   font-size: 3.3rem;
   animation: slide-fade 10s infinite;
+  font-family: "Inter", sans-serif;
 }
 
 .banner > p {
