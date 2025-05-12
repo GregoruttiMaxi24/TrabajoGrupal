@@ -38,7 +38,8 @@ body {
 
 .container-header {
   display: flex;
-  height: 110px;
+  flex-wrap: wrap;
+  justify-content: center;
   background: #1e1e1e;
   color: white;
   padding: 20px;
@@ -226,6 +227,7 @@ h2 {
   transition: background-color 0.3s ease;
   margin: 3px;
   border: 1px solid #c9c9c9;
+  font-family: "Inter", sans-serif;
 }
 
 .menu-container ul li a:hover {
