@@ -532,8 +532,23 @@ footer {
 
 /*-----------------------nav--------------*/
 
-nav {
+.container-lista ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 10px;
 
+
+}
+
+/*-------------------form----------------*/
+#form {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #7a4bd1;
+  color: white;
 
 }
 
