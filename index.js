@@ -1,5 +1,5 @@
 const button = document.querySelectorAll('.boton');
-const images = document.querySelectorAll('.container-producto img');
+const views = document.querySelectorAll('.view');
 
 // Recorre los productos 
 button.forEach(card => {
@@ -11,11 +11,12 @@ button.forEach(card => {
 })
 
 // Efecto zoom
-images.forEach(img => {
-    img.addEventListener('click', () => {
-        const url = img.src
-        const imageUrl = url.slice(22);
-        zoomImage(imageUrl)
+views.forEach(view => {
+    view.addEventListener('click', () => {
+        const product = view.parentElement.parentElement;
+        const urlImage = product.querySelector('img').src
+        const image = urlImage.slice(22);
+        zoomImage(image);
     })
 })
 
