@@ -58,7 +58,8 @@ function viewProduct(products){
         view.addEventListener('click', () => {
             const product = view.parentElement.parentElement;
             const urlImage = product.querySelector('img').src
-            const image = urlImage.slice(22);
+            const search = urlImage.split('/img')[1] || null
+            const image = `img${search}`
             zoomImage(image);
         })
     })
@@ -78,13 +79,12 @@ function notification(messege){
 
 
 function zoomImage(img){
-
     clearImages();
     const container = document.querySelector('.catalogo');
     const containerImage = document.createElement('div');
     containerImage.classList.add('zoom');
     containerImage.innerHTML = `
-        <img src='/${img}' alt='producto'>
+        <img src='/${img}' alt='producto'/>
     `
     container.appendChild(containerImage);
 
