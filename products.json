@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nombre": "Moto G05 Forest Green",
+        "categoria": "Motorola",
+        "precio": 500000,
+        "image": "img/modelos-celulares/moto-g05-forestgreen-front_back.png",
+        "cantidad": 5
+      },
+      {
+        "id": 2,
+        "nombre": "Moto G35 Chinois Green",
+        "categoria": "Motorola",
+        "precio": 640000,
+        "image": "img/modelos-celulares/moto-g35-chinoisgreen-case.png",
+        "cantidad": 10
+      },
+      {
+        "id": 3,
+        "nombre": "Moto G85",
+        "categoria": "Motorola",
+        "precio": 760000,
+        "image": "img/modelos-celulares/motog85.png",
+        "cantidad": 7
+      },
+      {
+        "id": 4,
+        "nombre": "Iphone 15 Plus",
+        "categoria": "Apple",
+        "precio": 920000,
+        "image": "img/modelos-celulares/phone15_plus-removebg-preview-removebg-preview.png",
+        "cantidad": 6
+      },
+      {
+        "id": 5,
+        "nombre": "Iphone X Trang",
+        "categoria": "Apple",
+        "precio": 950000,
+        "image": "img/iphone-x-trang-removebg-preview-9706.png",
+        "cantidad": 9
+      },
+      {
+        "id": 6,
+        "nombre": "Iphone 16 Pro Max",
+        "categoria": "Apple",
+        "precio": 1200000,
+        "image": "img/modelos-celulares/phone16_pro_max-removebg-preview-removebg-preview.png",
+        "cantidad": 5
+      },
+      {
+        "id": 7,
+        "nombre": "S25 Yellow",
+        "categoria": "Samsung",
+        "precio": 650000,
+        "image": "img/modelos-celulares/s25-yellow-front.png",
+        "cantidad": 6
+      },
+      {
+        "id": 8,
+        "nombre": "Samsung A15 Light Blue",
+        "categoria": "Samsung",
+        "precio": 540000,
+        "image": "img/modelos-celulares/samsung-a15-lightblue-front.png",
+        "cantidad": 12
+      },
+      {
+        "id": 9,
+        "nombre": "Samsung A06 Light Green",
+        "categoria": "Samsung",
+        "precio": 450000,
+        "image": "img/modelos-celulares/samsung-a06-lightgreen-front_2.png",
+        "cantidad": 9
+      }
+]
