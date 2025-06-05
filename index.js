@@ -84,7 +84,7 @@ function zoomImage(img){
     const containerImage = document.createElement('div');
     containerImage.classList.add('zoom');
     containerImage.innerHTML = `
-        <img src='/${img}' alt='producto'/>
+        <img src='${img}' alt='producto'/>
     `
     container.appendChild(containerImage);
 
