@@ -36,6 +36,7 @@ body {
   }
 }
 
+
 .container-header {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +46,7 @@ body {
   padding: 20px;
   text-align: center;
   justify-content: space-between;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .header-titulo {
@@ -200,20 +201,20 @@ nav ul li{
     width: 300px;
     height: 100px;
     border-radius: 16px;
-    top: 2%;
+    bottom: 6%;
     right: 2%;
     position: fixed;
+    z-index: 10;
     display: flex;
     justify-content: center;
     background-color: #5345d1;
-    z-index: 5;
     box-shadow: 0 4px 12px rgba(111, 80, 247, 0.15);
-    transform: translateY(-150%);
+    transform: translateY(180%);
     transition: transform 0.5s ease-out;
 }
 
 .alert.show {
-    transform: translateY(50%)
+    transform: translateY(12%)
 }
 
 .alert p {
