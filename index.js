@@ -225,3 +225,51 @@ async function handleSubmit(event){
         alert('Gracias por tu consulta! Te contactaremos pronto')
     }
 }
+
+// Menú Hamburguesa
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const closeBtn = document.getElementById('close-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle-mobile');
+
+// Abrir menú móvil
+hamburgerBtn.addEventListener('click', () => {
+  mobileMenu.classList.add('active');
+});
+
+// Cerrar menú móvil
+closeBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+});
+
+// Cerrar al hacer clic fuera del contenido
+mobileMenu.addEventListener('click', (e) => {
+  if (e.target === mobileMenu) {
+    mobileMenu.classList.remove('active');
+  }
+});
+
+// Dropdowns móviles
+dropdownToggles.forEach(toggle => {
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    const parent = toggle.parentElement;
+    parent.classList.toggle('active');
+    
+    // Cerrar otros dropdowns abiertos
+    dropdownToggles.forEach(otherToggle => {
+      if (otherToggle !== toggle) {
+        otherToggle.parentElement.classList.remove('active');
+      }
+    });
+  });
+});
+
+// Cerrar menú al seleccionar una opción
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  if (!link.classList.contains('dropdown-toggle-mobile')) {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+    });
+  }
+});

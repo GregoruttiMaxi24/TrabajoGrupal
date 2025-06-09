@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
@@ -38,7 +39,48 @@
       <div class="alert">
         <p></p>
       </div>
+
+       <!-- Botón del menú hamburguesa (visible solo en móviles) -->
+        <button class="hamburger-btn" id="hamburger-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
     </header>
+
+     <!-- Menú móvil (fuera del header) -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-content">
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul>
+          <li><a href="#welcome">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li class="dropdown-mobile">
+            <a href="#marcas" class="dropdown-toggle-mobile">Marcas <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu-mobile">
+              <a href="#samsung">Samsung</a>
+              <a href="#apple">Apple</a>
+              <a href="#motorola">Motorola</a>
+              <a href="#xiaomi">Xiaomi</a>
+              <a href="#huawuei">Huawuei</a>
+              <a href="#sony">Sony</a>
+            </div>
+          </li>
+          <li class="dropdown-mobile">
+            <a href="#" class="dropdown-toggle-mobile">Productos <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu-mobile">
+              <a href="#modelos">Celulares</a>
+              <a href="#">Cargadores</a>
+              <a href="#">Auriculares</a>
+              <a href="#">Fundas</a>
+            </div>
+          </li>
+          <li><a href="#etiqueta">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
 
     <nav>
       <div class="menu-container">
