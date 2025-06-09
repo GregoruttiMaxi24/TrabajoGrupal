@@ -122,10 +122,10 @@ async function filterProducts(){
                 alt=""
             />
             <div class="producto-precio">
-                <p>${precio}</p>
+                <p>"${precio}"</p>
             </div>
             <div class="producto-titulo">
-                <p>${nombre}</p>
+                <p>"${nombre}"</p>
             </div>
             <div class="producto-boton">
                 <button class="boton">comprar</button>
@@ -170,7 +170,7 @@ const themeToggle = document.getElementById('theme-toggle');
                 document.body.style.backgroundColor = '#daaadf';
                 document.body.style.color = '#240421';
             } else {
-                document.body.style.backgroundColor = '#240421';
+                document.body.style.backgroundColor = '#000';
                 document.body.style.color = '#daaadf';
             }
             isDarkTheme = !isDarkTheme;
