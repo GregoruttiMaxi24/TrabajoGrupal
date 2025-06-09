@@ -161,6 +161,20 @@ function clearContent(){
         catalogo.removeChild(catalogo.firstChild)
     }
 }
+// Dark Mode Toggle
+const themeToggle = document.getElementById('theme-toggle');
+        let isDarkTheme = false;
+
+        themeToggle.addEventListener('click', () => {
+            if (isDarkTheme) {
+                document.body.style.backgroundColor = '#daaadf';
+                document.body.style.color = '#240421';
+            } else {
+                document.body.style.backgroundColor = '#240421';
+                document.body.style.color = '#daaadf';
+            }
+            isDarkTheme = !isDarkTheme;
+        });
 
 
 

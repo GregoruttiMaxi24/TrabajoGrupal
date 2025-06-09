@@ -9,34 +9,27 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: linear-gradient(
-    45deg,
-    rgb(255, 254, 254),
-    #98b7fc,
-    #c090f7,
-    #966df7,
-    #9a9afa,
-    #b68bee,
-    #a86df5
-  );
-  background-size: 600% 600%;
-  animation: degradado 10s ease infinite;
-}
-/* ANIMACION DEL BODY */
-@keyframes degradado {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.container-color{
+  background-color: #1e1e1e;
+  color: white;
+  margin: 0 auto;
 }
 
+.boton-color{
+  background-color: #7a4bd1;
+  color: white;
+  border: 2px solid #000000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 3px;
+  transition: background-color 0.5s ease-in-out;
+}
 
+.boton-color:hover{
+  background-color: #49cc5d;
+}
 .container-header {
   display: flex;
   flex-wrap: wrap;
