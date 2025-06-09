@@ -105,35 +105,30 @@
     <br />
     <br />
 
+    
     <br /><br /><br />
 
     <div class="container-modelos">
       <div class="modelos-titulo">
-        <p>Todos los productos</p>
       </div>
       <div class="catalogo"></div>
     </div>
 
     <div class="form">
-      <form action="POST" id="form">
+      <form action="https://formspree.io/f/mzzgearv" method="POST" id="form"">
         <h3>Envianos tu consulta!</h3>
         <br />
         <label for="nombre"> </label>
-        <input type="text" name="nombre" placeholder="Nombre ()" />
+        <input type="text" name="nombre" placeholder="Nombre ()" required/>
 
         <label for="email"></label>
-        <input type="email" name="email" placeholder="Email ()" />
+        <input type="email" name="email" placeholder="Email ()" required/>
 
         <label for="telefono"></label>
-        <input type="number" name="telefono" placeholder="Telefono ()" />
+        <input type="number" name="telefono" placeholder="Telefono ()" required/>
 
-        <textarea
-          class="textarea"
-          name="mensaje"
-          id="comentarios"
-          placeholder="Motivo de la consulta"
-        ></textarea>
-        <button class="form-boton">Enviar</button>
+        <textarea class="textarea" name="mensaje" id="comentarios" placeholder="Tu consulta! " required></textarea>
+        <button class="form-boton" type="submit">Enviar</button>
       </form>
     </div>
 
