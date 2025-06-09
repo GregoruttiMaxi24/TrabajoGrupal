@@ -196,29 +196,3 @@ async function handleSubmit(event){
         alert('Gracias por tu consulta! Te contactaremos pronto')
     }
 }
-
-// Manejo del menú hamburguesa
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerToggle = document.getElementById('hamburger-toggle');
-    const navItems = document.querySelectorAll('.nav-item a');
-    
-    // Cerrar menú al hacer clic en un enlace (mobile)
-    navItems.forEach(item => {
-        item.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
-                hamburgerToggle.checked = false;
-            }
-        });
-    });
-    
-    // Toggle para dropdowns en mobile
-    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-        toggle.addEventListener('click', function(e) {
-            if (window.innerWidth <= 1020) {
-                e.preventDefault();
-                const dropdown = this.nextElementSibling;
-                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-            }
-        });
-    });
-});
