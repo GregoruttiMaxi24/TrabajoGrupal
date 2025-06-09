@@ -162,20 +162,49 @@ function clearContent(){
     }
 }
 
-// Dark Mode Toggle
+// Dark Mode Toggle mejorado
 const themeToggle = document.getElementById('theme-toggle');
-        let isDarkTheme = false;
+let isDarkTheme = localStorage.getItem('darkMode') === 'enabled';
 
-        themeToggle.addEventListener('click', () => {
-            if (isDarkTheme) {
-                document.body.style.backgroundColor = '#daaadf';
-                document.body.style.color = '#240421';
-            } else {
-                document.body.style.backgroundColor = '#000';
-                document.body.style.color = '#daaadf';
-            }
-            isDarkTheme = !isDarkTheme;
-        });
+// Aplicar el modo oscuro al cargar la página si estaba activado
+if (isDarkTheme) {
+  enableDarkMode();
+}
+
+themeToggle.addEventListener('click', () => {
+  if (isDarkTheme) {
+    disableDarkMode();
+  } else {
+    enableDarkMode();
+  }
+});
+
+function enableDarkMode() {
+  document.body.classList.add('dark-mode');
+  // Cambiar todos los textos negros a blancos
+  document.querySelectorAll('*').forEach(element => {
+    const color = window.getComputedStyle(element).color;
+    if (color === 'rgb(0, 0, 0)' || color === 'black') {
+      element.style.color = '#ffffff';
+    }
+  });
+  localStorage.setItem('darkMode', 'enabled');
+  isDarkTheme = true;
+  themeToggle.textContent = 'Modo Claro';
+}
+
+function disableDarkMode() {
+  document.body.classList.remove('dark-mode');
+  // Restaurar colores originales (excepto los que tenían color negro explícito)
+  document.querySelectorAll('*').forEach(element => {
+    if (element.style.color === 'rgb(255, 255, 255)' || element.style.color === 'white') {
+      element.style.color = '';
+    }
+  });
+  localStorage.setItem('darkMode', 'disabled');
+  isDarkTheme = false;
+  themeToggle.textContent = 'Modo Oscuro';
+}
 
 //Formulario
 const $form = document.querySelector('#form')

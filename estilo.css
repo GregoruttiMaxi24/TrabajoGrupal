@@ -1,3 +1,11 @@
+:root {
+  --bg-light: #ffffff;
+  --text-light: #1e1e1e;
+  --bg-dark: #121212;
+  --text-dark: #ffffff;
+  /* ... otros colores ... */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -134,7 +142,6 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
   z-index: 1000;
 }
 
@@ -455,7 +462,7 @@ h2 {
   margin: 22px 0;
   text-align: center;
   outline: 2px solid transparent;
-  border-radius: 16px;
+  border-radius: 20px;
   background-color: #7a4bd126;
   color: white;
   transition: box-shadow 0.4s ease;
@@ -536,7 +543,7 @@ h2 {
   background-color: rebeccapurple;
   color: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 10px auto;
 }
 
@@ -605,6 +612,83 @@ footer {
 
 .etiqueta a {
   margin: 0 10px;
+}
+
+/*------------------MODO OSCURO----------*/
+/* Agrega esto al final de tu archivo CSS */
+
+/* Modo oscuro - estilos generales */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+/* Modo oscuro - header */
+.dark-mode .container-header {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .header-titulo h1 {
+  color: #ffffff !important;
+}
+
+/* Modo oscuro - navegación */
+.dark-mode nav {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .menu-container ul li a {
+  color: #ffffff !important;
+  border-color: #333 !important;
+}
+
+.dark-mode .dropdown-menu {
+  background-color: #1e1e1e !important;
+  box-shadow: 0px 0px 2px 8px rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-mode .dropdown-item {
+  color: #c090f7 !important;
+}
+
+/* Modo oscuro - buscador */
+.dark-mode .container-buscador input[type="text"] {
+  background: #333 !important;
+  color: #fff !important;
+  border-color: #555 !important;
+}
+
+.dark-mode .container-buscador .boton-buscar {
+  background: #333 !important;
+  color: #fff !important;
+}
+
+/* Modo oscuro - productos */
+.dark-mode .container-producto {
+  background-color: #33333326 !important;
+  border-color: #555 !important;
+}
+
+.dark-mode .producto-titulo,
+.dark-mode .producto-precio {
+  color: #fff !important;
+}
+
+/* Modo oscuro - formulario */
+.dark-mode #form {
+  background-color: #333 !important;
+}
+
+/* Modo oscuro - footer */
+.dark-mode footer {
+  background-color: #000 !important;
+}
+
+/* Modo oscuro - alerta */
+.dark-mode .alert {
+  background-color: #333 !important;
 }
 
 /*-------------responsive------------*/
