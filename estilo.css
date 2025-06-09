@@ -19,7 +19,6 @@ html {
 
 .container-color {
   color: white;
-  margin: 0 auto;
 }
 
 .boton-color {
@@ -88,7 +87,6 @@ nav {
   display: inline-block;
   width: 100%;
   background: #fff;
-  padding: 5px 5px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -619,7 +617,7 @@ footer {
 
 /* Modo oscuro - estilos generales */
 .dark-mode {
-  background-color: #121212 !important;
+  background-color: #1e1e1e !important;
   color: #ffffff !important;
   transition: all 0.3s ease;
 }
@@ -635,9 +633,6 @@ footer {
 }
 
 /* Modo oscuro - navegación */
-.dark-mode nav {
-  background-color: #1e1e1e !important;
-}
 
 .dark-mode .menu-container ul li a {
   color: #ffffff !important;
@@ -647,6 +642,7 @@ footer {
 .dark-mode .dropdown-menu {
   background-color: #1e1e1e !important;
   box-shadow: 0px 0px 2px 8px rgba(255, 255, 255, 0.1) !important;
+  text-align: center;
 }
 
 .dark-mode .dropdown-item {
@@ -698,7 +694,7 @@ footer {
   display: none;
   background: none;
   border: none;
-  color: #1e1e1e;
+  color: #7a4bd1;
   font-size: 1.5rem;
   cursor: pointer;
   padding: 10px;

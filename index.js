@@ -184,7 +184,7 @@ function enableDarkMode() {
   // Cambiar todos los textos negros a blancos
   document.querySelectorAll('*').forEach(element => {
     const color = window.getComputedStyle(element).color;
-    if (color === 'rgb(0, 0, 0)' || color === 'black') {
+    if (color === '#000000' || color === 'black') {
       element.style.color = '#ffffff';
     }
   });
