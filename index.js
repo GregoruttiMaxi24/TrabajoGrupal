@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Toggle para dropdowns en mobile
     document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
         toggle.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 1020) {
                 e.preventDefault();
                 const dropdown = this.nextElementSibling;
                 dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
