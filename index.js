@@ -196,4 +196,12 @@ async function handleSubmit(event){
     }
 }
 
-
+/*-+--------MENU HAMBURGUESA--------*/
+// Cerrar menú al hacer clic en un enlace
+document.querySelectorAll('.nav-item a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            document.getElementById('menu__toggle').checked = false;
+        }
+    });
+});
