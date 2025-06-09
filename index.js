@@ -161,6 +161,7 @@ function clearContent(){
         catalogo.removeChild(catalogo.firstChild)
     }
 }
+
 // Dark Mode Toggle
 const themeToggle = document.getElementById('theme-toggle');
         let isDarkTheme = false;
@@ -196,12 +197,22 @@ async function handleSubmit(event){
     }
 }
 
-/*-+--------MENU HAMBURGUESA--------*/
-// Cerrar menú al hacer clic en un enlace
+// Cerrar menú al hacer clic en enlaces (para mobile)
 document.querySelectorAll('.nav-item a').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', function() {
         if (window.innerWidth <= 768) {
-            document.getElementById('menu__toggle').checked = false;
+            document.getElementById('hamburger-toggle').checked = false;
+        }
+    });
+});
+
+// Toggle para dropdowns en mobile
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = this.nextElementSibling;
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
         }
     });
 });
