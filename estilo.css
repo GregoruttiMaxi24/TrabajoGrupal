@@ -609,20 +609,6 @@ footer {
 
 /*-------------responsive------------*/
 
-.container-header {
-  flex-direction: column;
-  align-items: center;
-}
-.header-titulo h1 {
-  font-size: 1.2em;
-}
-.menu-container ul {
-  align-items: center;
-}
-.menu-container ul li {
-  margin: 5px 0;
-}
-
 /*----------------------------------------------------*/
 
 @media (max-width: 768px) {
