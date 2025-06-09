@@ -653,7 +653,7 @@ footer {
   }
 
   /* Modal lateral para móviles */
-  @media (max-width: 768px) {
+  @media (max-width: 1020px) {
     .hamburger-container {
       display: block;
       background: blueviolet;
