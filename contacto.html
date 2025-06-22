@@ -4,8 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto-Uno-movil</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    
+     <header>
+      
+      <div class="container-header">
+        <div class="header-titulo">
+          <h1 class="titulo-h1">UNO-Mobil</h1>
+          <img src="img/UNO-Mobil.png" alt="logo" class="logo" />
+        </div>
+        <div class="container-color">
+          <button class="boton-color" id="theme-toggle">Modo Oscuro</button>
+        </div>
+        <div class="container-buscador">
+          <input type="text" placeholder="..." class="buscador" />
+          <button class="boton-buscar">Buscar</button>
+        </div>
+      </div>
+      <div class="alert">
+        <p></p>
+      </div>
+
+       <!-- Botón del menú hamburguesa (visible solo en móviles) -->
+        <button class="hamburger-btn" id="hamburger-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+    </header>
+
+     <!-- Menú móvil (fuera del header) -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-content">
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li class="dropdown-mobile">
+            <a href="#marcas" class="dropdown-toggle-mobile">Marcas <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu-mobile">
+              <a href="#samsung">Samsung</a>
+              <a href="#apple">Apple</a>
+              <a href="#motorola">Motorola</a>
+              <a href="#xiaomi">Xiaomi</a>
+              <a href="#huawuei">Huawuei</a>
+              <a href="#sony">Sony</a>
+            </div>
+          </li>
+          <li class="dropdown-mobile">
+            <a href="#" class="dropdown-toggle-mobile">Productos <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu-mobile">
+              <a href="#modelos">Celulares</a>
+              <a href="#">Cargadores</a>
+              <a href="#">Auriculares</a>
+              <a href="#">Fundas</a>
+            </div>
+          </li>
+          <li><a href="contacto.html" target="_blank">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav>
+      <div class="menu-container">
+        <ul>
+          <li class="nav-item">
+            <a href="index.html" class="nav-item">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#servicios" class="nav-item">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#marcas"
+              class="nav-link dropdown-toggle"
+              id="desplegar"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Marcas</a
+            >
+            <div class="dropdown-menu">
+              <a href="#samsung" class="dropdown-item">Samsung</a>
+              <a href="#apple" class="dropdown-item">Apple</a>
+              <a href="#motorola" class="dropdown-item">Motorola</a>
+              <a href="#xiaomi" class="dropdown-item">Xiaomi</a>
+              <a href="#huawuei" class="dropdown-item">Huawuei</a>
+              <a href="#sony" class="dropdown-item">Sony</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              id="desplegar"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Productos</a
+            >
+            <div class="dropdown-menu">
+              <a href="#modelos" class="dropdown-item">Celulares</a>
+              <a href="#" class="dropdown-item">Cargadores</a>
+              <a href="#" class="dropdown-item">Auriculares</a>
+              <a href="#" class="dropdown-item">Fundas</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" target="_blank" class="nav-item">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main-conteiner">
+      <section class="contacto-conteiner">
+        <h2 class="h2-contacto">Contacto</h2>
+        <p class="p-contacto">Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+        
+      </section>
 </body>
 </html>

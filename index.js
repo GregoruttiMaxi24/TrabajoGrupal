@@ -20,7 +20,7 @@ async function reloadProduct(){
                 alt=""
             />
             <div class="producto-precio">
-                <p>${precio}</p>
+                <p>$${precio}</p>
             </div>
             <div class="producto-titulo">
                 <p>${nombre}</p>
@@ -122,7 +122,7 @@ async function filterProducts(){
                 alt=""
             />
             <div class="producto-precio">
-                <p>"${precio}"</p>
+                <p>"$${precio}"</p>
             </div>
             <div class="producto-titulo">
                 <p>"${nombre}"</p>
