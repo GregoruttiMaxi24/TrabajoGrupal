@@ -19,6 +19,7 @@ html {
 
 .container-color {
   color: white;
+
 }
 
 .boton-color {
@@ -135,12 +136,21 @@ nav ul li {
 }
 
 .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 100px;
-  color: white;
+  height: 65px;
+  padding: 15px;
+
+}
+
+.home a{
+  background: #000;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: "Inter", sans-serif;
+  margin:auto;
+  padding: 10px;
+  border-radius: 25px;
 }
 
 
@@ -171,13 +181,14 @@ nav ul li {
   padding: 15px;
 }
 
-.p-contacto {
+.p-contacto .p2-contacto .p3-contacto
+.p4-contacto .p5-contacto .p6-contacto {
   font-size: 1.2em;
   color: #1e1e1e;
   margin-bottom: 10px;
-  padding: 15px;
+  padding: 15px 10px;
+  text-align: justify;
 }
-
 
 
 /*-------------BUSCADOR----------------*/
