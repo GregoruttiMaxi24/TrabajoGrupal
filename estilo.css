@@ -165,10 +165,9 @@ nav ul li {
   color: white;
 }
 
-.container-contacto {
-  width: 100%;
+.contacto-container {
+  width: 87%;
   height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -181,8 +180,8 @@ nav ul li {
   padding: 15px;
 }
 
-.p-contacto .p2-contacto .p3-contacto
-.p4-contacto .p5-contacto .p6-contacto {
+.p-contacto, .p2-contacto, .p3-contacto,
+.p4-contacto, .p5-contacto, .p6-contacto {
   font-size: 1.2em;
   color: #1e1e1e;
   margin-bottom: 10px;
