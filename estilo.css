@@ -367,7 +367,8 @@ h2 {
   background-color: #f9f9f9;
 }
 
-/*-----------------------------------------*/
+/*-------------------BANNER----------------------*/
+
 .banner-container {
   mask-image: linear-gradient(#c090f7 80%, transparent);
 }
@@ -398,7 +399,8 @@ h2 {
   text-align: center;
   animation: moved-fade 10s infinite;
 }
-/* ANIMACION DE IMAGENES */
+/*-------- ANIMACION DE IMAGENES--------*/
+
 @keyframes changeImage {
   0% {
     background-image: url("img/pexels-photo-24738079.webp");
@@ -482,7 +484,23 @@ h2 {
   margin-bottom: 10px;
 }
 
-/*----------------------------------------------*/
+/*-------------------SERVICIOS------------- */
+servicios-container {
+  width: 100%;
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.servicios-img {
+  width: 100%;
+  height: 300px;
+}
+
+
+/*--------------MODELOS---------------------*/
 
 .container-modelos {
   width: 100%;
