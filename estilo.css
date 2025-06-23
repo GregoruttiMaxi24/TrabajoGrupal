@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 html {
@@ -339,6 +339,7 @@ h2 {
 .menu-container ul li {
   display: flex;
 }
+
 .menu-container ul li a {
   text-decoration: none;
   color: #000;
@@ -513,6 +514,27 @@ h2 {
   text-align: center; 
 }
   
+/*---------------------TITULO-MODELOS--------------*/
+
+.container-titulo-modelos {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+}
+
+.titulos-modelos {
+  width: 89%;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #1e1e1e;
+  text-shadow: 1px #000;
+}
 
 /*--------------MODELOS---------------------*/
 
@@ -629,8 +651,10 @@ h2 {
   background-color: rebeccapurple;
   color: white;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 40px;
   margin: 10px auto;
+  margin-bottom: 150px;
+  flex-wrap: wrap;
 }
 
 .form-boton {
@@ -651,7 +675,7 @@ textarea {
   margin: 10px 0;
   box-sizing: border-box;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 label {
   font-size: 18px;
@@ -701,35 +725,43 @@ footer {
 }
 
 /*--------------CONTACTO-------------- */
+
 .container-contacto1 {
-  width: 98%;
+  flex-wrap: wrap;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  box-shadow: 1px 1px 1px 1px #000;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  margin: auto;
+  margin-bottom: 150px;
+  margin-top: 150px;
 }
 
 .contacto-img1 {
-  width: 50%;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px; 
+  width: 100%;
+  flex-wrap: wrap;
+
 }
 
 .contacto-img1 img {
   width: 100%;
   height: auto;
-  border-radius: 20px;
 }
 
 .contacto-texto1 {
-  width: 50%;
-  padding: 20px;
+     position: absolute;
+    width: 60%;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: -32%;
+  
+}
+
+.p-contacto1 {
   font-size: 1.2em;
-  color: #1e1e1e;
+  margin-bottom: 10px;
+  padding: 15px 10px;
+  
 }
 
 
@@ -787,6 +819,10 @@ footer {
   color: #fff !important;
 }
 
+.dark-mode .titulos-modelos  {
+  color: #fff !important;
+}
+
 /* Modo oscuro - productos */
 .dark-mode .container-producto {
   background-color: #33333326 !important;
@@ -797,6 +833,8 @@ footer {
 .dark-mode .producto-precio {
   color: #fff !important;
 }
+
+
 
 /* Modo oscuro - formulario */
 .dark-mode #form {
@@ -813,7 +851,7 @@ footer {
   background-color: #333 !important;
 }
 
-/*-------------hamburguesa-----------*/
+/*------------MENU-hamburguesa-----------*/
 
 /* Estilos del menú hamburguesa */
 .hamburger-btn {
@@ -914,6 +952,8 @@ footer {
   display: block;
 }
 
+/*--------------------------RESPONSIVE-----------------*/
+
 /* Media queries para mostrar/ocultar menús */
 @media (max-width: 1020px) {
   .hamburger-btn {
@@ -928,6 +968,53 @@ footer {
   nav .menu-container {
     display: none;
   }
+
+  .servicios-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicios-img img {
+    width: 100%;
+    margin-bottom: 20px;
+    
+  }
+
+.servicios-texto {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+
+  .titulos-modelos {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .container-contacto1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .contacto-texto1 {
+    display: flex;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  .p-contacto1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
 }
 
 @media (min-width: 1021px) {
@@ -957,7 +1044,7 @@ footer {
   color: #ffffff;
 }
 
-/*----------------------------------------------------*/
+/*------------------------RESPONSIVE----------------------------*/
 
 @media (max-width: 768px) {
   .container-header {
