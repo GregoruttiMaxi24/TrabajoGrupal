@@ -702,15 +702,27 @@ footer {
 
 /*--------------CONTACTO-------------- */
 .container-contacto1 {
-  width: 100%;
+  width: 98%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  box-shadow: 1px 1px 1px 1px #000;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin: auto;
 }
 
 .contacto-img1 {
   width: 50%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px; 
+}
+
+.contacto-img1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
 .contacto-texto1 {
