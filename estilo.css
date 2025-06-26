@@ -780,6 +780,13 @@ footer {
   transition: all 0.3s ease;
 }
 
+/* Modo oscuro - main container */
+
+.dark-mode .contacto-container p,
+.dark-mode .contacto-container p a{
+  color:  #ffffff;
+}
+
 /* Modo oscuro - header */
 .dark-mode .container-header {
   background-color: #1e1e1e !important;
